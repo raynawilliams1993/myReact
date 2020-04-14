@@ -1,11 +1,18 @@
 
 
 import React, { Component } from 'react'
+import {
+	Card, CardImg, CardText, CardBody, CardLink,
+	CardTitle, CardSubtitle
+  } from 'reactstrap';
+  import pic from "../assets/EmployeeDir.png";
+  
+
 
 export default class Projects extends Component {
-  render() {
-    return (
-      <div>
+	render() {
+		return (
+			<div>
 				<section className="colorlib-work" data-section="projects">
 					<div className="colorlib-narrow-content">
 						<div className="row">
@@ -16,22 +23,40 @@ export default class Projects extends Component {
 						</div>
 						<div className="row">
 							<div className="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-								<div className="project" style={{backgroundImage: 'url(images/img-1.jpg)'}}>
+								<div className="project" style={{ backgroundImage: 'url(images/img-1.jpg)' }}>
 									<div className="desc">
 										<div className="con">
 											<h3><a href="work.html">Work 01</a></h3>
 											<span>Website</span>
 											<p className="icon">
-												<span><a href="#"><i className="icon-share3" /></a></span>
-												<span><a href="#"><i className="icon-eye" /> 100</a></span>
-												<span><a href="#"><i className="icon-heart" /> 49</a></span>
+												<Card>
+													<CardBody>
+														<CardTitle style={{ color: "magenta" }}>Employee Directory</CardTitle>
+														<CardSubtitle style={{ color: "magenta" }}>React Application</CardSubtitle>
+													</CardBody>
+													<CardImg src={pic} alt="EmployeeDir" height="100px" weight="100px" />
+													<CardBody>
+														<CardText style={{ color: "purple" }}>A simple Employee Directory System  that allows the user to search by specific ID.</CardText>
+														<ul>
+															<li>
+																<CardLink href=" https://github.com/raynawilliams1993/employeeDirectory" type="btn" class="btn-flat">Github</CardLink>
+
+															</li>
+															<li>
+																<CardLink href=" https://dashboard.heroku.com/apps/secret-dawn-67450">Heroku</CardLink>
+
+															</li>
+
+														</ul>
+													</CardBody>
+												</Card>
 											</p>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div className="col-md-4 animate-box" data-animate-effect="fadeInRight">
-								<div className="project" style={{backgroundImage: 'url(images/img-2.jpg)'}}>
+								<div className="project" style={{ backgroundImage: 'url(images/img-2.jpg)' }}>
 									<div className="desc">
 										<div className="con">
 											<h3><a href="work.html">Work 02</a></h3>
@@ -46,7 +71,7 @@ export default class Projects extends Component {
 								</div>
 							</div>
 							<div className="col-md-4 animate-box" data-animate-effect="fadeInTop">
-								<div className="project" style={{backgroundImage: 'url(images/img-3.jpg)'}}>
+								<div className="project" style={{ backgroundImage: 'url(images/img-3.jpg)' }}>
 									<div className="desc">
 										<div className="con">
 											<h3><a href="work.html">Work 03</a></h3>
@@ -61,7 +86,7 @@ export default class Projects extends Component {
 								</div>
 							</div>
 							<div className="col-md-4 animate-box" data-animate-effect="fadeInBottom">
-								<div className="project" style={{backgroundImage: 'url(images/img-4.jpg)'}}>
+								<div className="project" style={{ backgroundImage: 'url(images/img-4.jpg)' }}>
 									<div className="desc">
 										<div className="con">
 											<h3><a href="work.html">Work 04</a></h3>
@@ -76,7 +101,7 @@ export default class Projects extends Component {
 								</div>
 							</div>
 							<div className="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-								<div className="project" style={{backgroundImage: 'url(images/img-5.jpg)'}}>
+								<div className="project" style={{ backgroundImage: 'url(images/img-5.jpg)' }}>
 									<div className="desc">
 										<div className="con">
 											<h3><a href="work.html">Work 05</a></h3>
@@ -91,7 +116,7 @@ export default class Projects extends Component {
 								</div>
 							</div>
 							<div className="col-md-4 animate-box" data-animate-effect="fadeInRight">
-								<div className="project" style={{backgroundImage: 'url(images/img-6.jpg)'}}>
+								<div className="project" style={{ backgroundImage: 'url(images/img-6.jpg)' }}>
 									<div className="desc">
 										<div className="con">
 											<h3><a href="work.html">Work 06</a></h3>
@@ -113,4 +138,4 @@ export default class Projects extends Component {
 						</div>
 					</div>
 				</section>
-      </div>
+			</div>

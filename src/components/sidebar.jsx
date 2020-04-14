@@ -17,8 +17,8 @@ export default class Sidebar extends Component {
               <ul>
                
 
-                <li><a href="https://www.linkedin.com/in/dhruv-b-545b52a9/" target="_blank" rel="noopener noreferrer">LinkedIn Profile<i className="icon-linkedin2" /></a></li>
-                <li><a href="https://github.com/Dhruv34788" target="_blank" rel="noopener noreferrer"> Github Profile<i className="icon-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/rayna-williams-225965191/" target="_blank" rel="noopener noreferrer">LinkedIn Profile<i className="icon-linkedin2" /></a></li>
+                <li><a href="https://github.com/raynawilliams1993" target="_blank" rel="noopener noreferrer"> Github Profile<i className="icon-github"></i></a></li>
 
               </ul>
             </nav>
