@@ -1,26 +1,34 @@
+import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Navi from "./client/components/navbar/navbar";
+import Wrapper from "./client/components/wrapper/wrapper";
+import About from "./client/components/pages/about";
+import Contact from "./client/components/contact/contact";
+import Portfolio from "./client/components/pages/portfolio";
+import LandingPage from "./client/components/landingPage/landingPage";
+import Footer from "./client/components/footer/footer";
 
-import React, { Component } from 'react';
-import './App.css';
-import Sidebar from './components/sidebar'
-import Introduction from './components/introduction'
-import About from './components/about'
 
+function App() {
+  return (
 
-class App extends Component {
-  render() {
-    return (
-      <div id="colorlib-page">
-        <div id="container-wrap">
-          <Sidebar></Sidebar>
-          <div id="colorlib-main">
-            <Introduction></Introduction>
-            <About></About>
+    <Router>
+      <div className="App">
+        <Navi />
 
-          </div>
-        </div>
+        <Wrapper>
+          <Route path="/" render={() => <LandingPage />} exact />
+          <Route path="/about" render={() => <About />} exact />
+          <Route path="/contact" render={() => <Contact />} exact />
+          <Route path="/portfolio" render={() => <Portfolio />} exact />
+          
+        </Wrapper>
+      <Footer/>
       </div>
-    );
-  }
+    </Router>
+  );
 }
+
+
 
 export default App;
