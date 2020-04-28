@@ -1,20 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import navigate from "./components/navigate/navigate";
-import Wrapper from "./client/components/wrapper/wrapper";
+
+import Wrapper from "./components/wrapper/wrapper";
 import About from "./components/pages/about";
 import Contact from "./components/pages/contact";
 import Portfolio from "./components/pages/portfolio";
 // import LandingPage from "./client/components/landingPage/landingPage";
 import Footer from "./components/footer/footer";
-
+import breadNav from "./components/breadCrumb/breadCrumb";
 
 function App() {
   return (
 
     <Router>
       <div className="App">
-        <navigate />
+        <breadNav/>
 
         <Wrapper>
           {/* <Route path="/" render={() => <LandingPage />} exact /> */}
