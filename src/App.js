@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Navi from "./client/components/navbar/navbar";
-import Wrapper from "./client/components/wrapper/wrapper";
+import navigate from "./components/navigate/navigate";
+// import Wrapper from "./client/components/wrapper/wrapper";
 import About from "./client/components/pages/about";
 import Contact from "./client/components/contact/contact";
 import Portfolio from "./client/components/pages/portfolio";
-import LandingPage from "./client/components/landingPage/landingPage";
+// import LandingPage from "./client/components/landingPage/landingPage";
 import Footer from "./client/components/footer/footer";
 
 
@@ -14,15 +14,15 @@ function App() {
 
     <Router>
       <div className="App">
-        <Navi />
-
-        <Wrapper>
-          <Route path="/" render={() => <LandingPage />} exact />
+        <navigate />
+{/* 
+        <Wrapper> */}
+          {/* <Route path="/" render={() => <LandingPage />} exact /> */}
           <Route path="/about" render={() => <About />} exact />
           <Route path="/contact" render={() => <Contact />} exact />
           <Route path="/portfolio" render={() => <Portfolio />} exact />
-          
-        </Wrapper>
+{/*           
+        </Wrapper> */}
       <Footer/>
       </div>
     </Router>
