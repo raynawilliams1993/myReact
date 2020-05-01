@@ -3,9 +3,11 @@ import React from 'react'
 import {
   Hero
 } from 'react-landing-page'
+import navBar from '../navBar/navBar';
 
 const LandingPage = props => (
- 
+    <navBar>
+
     <Hero
       
       color="white"
@@ -21,6 +23,7 @@ const LandingPage = props => (
 
 
     </Hero>
+    </navBar>
 
 )
 export default LandingPage;
