@@ -9,7 +9,7 @@ const contact = (props) => {
         <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
         <Button>Button</Button>
       </Card>
-      <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
+      <Card body inverse style={{ backgroundColor: '#red', borderColor: '#333' }}>
         <CardTitle>Phone:</CardTitle>
         <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
         <Button>Button</Button>

@@ -11,7 +11,7 @@ const NavBar  = (props) => {
 
   return (
     <div>
-      <Nav tabs>
+      <Nav tabs >
         <NavItem>
           <Button>
 
