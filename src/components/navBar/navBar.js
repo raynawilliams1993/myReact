@@ -18,6 +18,18 @@ const NavBar  = (props) => {
           <NavLink  href="/about" active>About</NavLink>
           </Button>
         </NavItem>
+        <NavItem>
+          <Button>
+
+          <NavLink  href="/contact" active>Contact</NavLink>
+          </Button>
+        </NavItem>
+        <NavItem>
+          <Button>
+
+          <NavLink  href="/portfolio" active>Portfolio</NavLink>
+          </Button>
+        </NavItem>
         {/* <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
           <DropdownToggle nav caret>
             Dropdown
