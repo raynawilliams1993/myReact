@@ -8,6 +8,7 @@ import Portfolio from "./components/pages/portfolio";
 import LandingPage from "./components/landingPage/landingPage";
 import Footer from "./components/footer/footer";
 import NavBar from "./components/navBar/navBar";
+import { Button } from 'reactstrap';
 
 
 function App() {

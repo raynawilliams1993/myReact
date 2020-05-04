@@ -1,29 +1,45 @@
-import React from 'react';
-import { Nav, NavItem, NavLink } from 'reactstrap';
 
-const NavBar = (props) => {
+
+
+import React, { useState } from 'react';
+import { Nav, NavItem, Button, NavLink } from 'reactstrap';
+
+const NavBar  = (props) => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggle = () => setDropdownOpen(!dropdownOpen);
+
   return (
     <div>
-      <p>List Based</p>
-      <Nav vertical>
+      <Nav tabs>
         <NavItem>
-          <NavLink href="/about">About Me</NavLink>
+          <Button>
+
+          <NavLink  href="/about" active>About</NavLink>
+          </Button>
         </NavItem>
+        {/* <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
+          <DropdownToggle nav caret>
+            Dropdown
+          </DropdownToggle>
+          <DropdownMenu>
+            <DropdownItem header>Header</DropdownItem>
+            <DropdownItem disabled>About</DropdownItem>
+            <DropdownItem>Another Action</DropdownItem>
+            <DropdownItem divider />
+            <DropdownItem>Another Action</DropdownItem>
+          </DropdownMenu>
+        </Dropdown>
         <NavItem>
           <NavLink href="/contact">Contact</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="/portfolio">Portfolio</NavLink>
+          <NavLink href="/portfolio"></NavLink>
         </NavItem>
-        {/* <NavItem>
+        <NavItem>
           <NavLink disabled href="/">Disabled Link</NavLink>
         </NavItem> */}
       </Nav>
-      <hr />
-      {/* <p>Link based</p>
-      <Nav vertical>
-        <NavLink href="#">Link</NavLink> <NavLink href="#">Link</NavLink> <NavLink href="#">Another Link</NavLink> <NavLink disabled href="#">Disabled Link</NavLink>
-      </Nav> */}
     </div>
   );
 }

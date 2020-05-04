@@ -4,7 +4,7 @@ import { Card, Button, CardTitle, CardText } from 'reactstrap';
 const contact = (props) => {
   return (
     <div>
-      <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
+      <Card body inverse style={{ backgroundColor: '#333', borderColor: 'pink' }}>
         <CardTitle>Email:</CardTitle>
         <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
         <Button>Button</Button>
